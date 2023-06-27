@@ -1,0 +1,25 @@
+Authors Table:
+
+author_id (INT, PRIMARY KEY): Unique identifier for the author.
+author_name (VARCHAR(100)): Name of the author.
+birth_date (DATE): Date of birth of the author.
+country (VARCHAR(50)): Country of the author.
+Books Table:
+
+book_id (INT, PRIMARY KEY): Unique identifier for the book.
+title (VARCHAR(200)): Title of the book.
+publication_date (DATE): Date of publication of the book.
+author_id (INT, FOREIGN KEY): Foreign key referencing the author_id from the Authors table.
+Customers Table:
+
+customer_id (INT, PRIMARY KEY): Unique identifier for the customer.
+first_name (VARCHAR(50)): First name of the customer.
+last_name (VARCHAR(50)): Last name of the customer.
+email (VARCHAR(100)): Email address of the customer.
+Orders Table:
+
+order_id (INT, PRIMARY KEY): Unique identifier for the order.
+customer_id (INT, FOREIGN KEY): Foreign key referencing the customer_id from the Customers table.
+book_id (INT, FOREIGN KEY): Foreign key referencing the book_id from the Books table.
+order_date (DATE): Date of the order.
+This schema represents the structure of the Online Bookstore Database project, with tables for authors, books, customers, and orders. The foreign key relationships ensure referential integrity between the tables. Feel free to modify or expand the schema based on your specific project requirements.
